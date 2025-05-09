@@ -1,0 +1,1922 @@
+/* Manrope Font Family */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSvfedN4.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSvfedN4.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*---------------------INDEX PAGE--------------------------------*/
+body {
+  font-family: 'Manrope', serif;
+  background-color: antiquewhite;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Manrope', serif;
+}
+.nav-links {
+  background-color:#aaa;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  display: inline-block; /* Changed from block */
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #e0e0e0;
+}
+
+.modern-text {
+  font-family: 'Manrope', sans-serif;
+  font-optical-sizing: auto;
+}
+
+.gallery-section {
+    margin: 4rem 0;
+    position: relative;
+  }
+  
+  #gallery-heading {
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair', serif;
+    text-align: center;
+  }
+  
+  .gallery-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 2rem;
+  }
+  
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 100%; /* Full width on mobile */
+    padding: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .gallery-item:hover,
+  .gallery-item:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+  .gallery-item:focus-visible {
+    outline: 2px solid #262a2d;
+  }
+  
+  .item-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(58, 58, 58);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
+  }
+  
+  .item-meta {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-bottom: 0;
+  }
+  .item-image a {
+    display: block;
+    position: relative;
+    color: inherit; /* Use the parent element's text color */
+    text-decoration: none; /* Remove underlines */
+  }
+
+   /* .item-content-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); 
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+    padding-top: 3rem;
+}  */
+  
+  .item-image  {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative; 
+  }
+  
+  .item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover .item-image img,
+  .gallery-item:focus .item-image img {
+    transform: scale(1.05);
+  }
+  
+  .gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-nav:hover,
+  .gallery-nav:focus {
+    opacity: 1;
+    outline: none;
+  }
+  
+  .gallery-prev {
+    left: 0.5rem;
+  }
+  
+  .gallery-next {
+    right: 0.5rem;
+  }
+  
+  .gallery-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active {
+    background: #333;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Overall grid layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.site-footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .about-section {
+    grid-column: 1 / 2;
+  }
+  
+  .gallery-section {
+    grid-column: 2 / -1;
+  }
+}
+  
+  /* Media Query for larger screens */
+  @media (min-width: 768px) {
+    .gallery-item {
+      width: calc(33.333% - 1rem);
+    }
+  }
+  
+  /* Media Query for dark mode */
+  @media (prefers-color-scheme: dark) {
+    .gallery-section {
+      background-color: #222;
+      color: #eee;
+    }
+    
+    .gallery-item {
+      background-color: #333;
+    }
+    
+    .item-meta {
+      color: #aaa;
+    }
+    
+    .gallery-nav {
+      background: rgba(50, 50, 50, 0.8);
+      color: #eee;
+    }
+    
+    .indicator {
+      background: #555;
+    }
+    
+    .indicator.active {
+      background: #aaa;
+    }
+  }
+  /*-------------------END INDEX PAGE-----------------------*/
+  /*-------------------BEGIN SURFING PAGE------------------------*/
+ /* Surfing page specific styles */
+
+
+.personal-surf-media {
+  margin-top: 2rem;
+}
+
+.personal-surf-media h3 {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #3a7ca5;
+  padding-left: 1rem;
+}
+.surfing-intro {
+  max-width: 1400px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pro-surfers {
+  max-width: 900px !important;
+  width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+
+.surfer-profile {
+  max-width: 800px !important;
+  width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 1rem !important;
+  box-sizing: border-box !important;
+}
+
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.media-item {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.media-item video,
+.media-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-caption {
+  padding: 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+}
+.pro-surfers > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pro-surfers > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.surfer-profile {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 100%; 
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box; 
+}
+
+.surfer-profile h3 {
+  border-bottom: 2px solid #3a7ca5;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem !important;
+
+}
+
+.surfer-content {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 2rem;
+}
+
+.surfer-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.surfer-bio img {
+  max-height: 300px !important;
+  height: auto !important;
+}
+
+.surfboard-gallery h4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.board-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem !important;
+  max-width: 100% !important;
+}
+
+.board-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 250px !important;
+  width: 100% !important;
+}
+
+.board-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.board-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.board-card h5 {
+  padding: 1rem 1rem 0.5rem;
+  margin: 0;
+  font-family: 'Lora', serif;
+  color: #3a7ca5;
+  font-size: 1.1rem;
+}
+
+.board-card p {
+  padding: 0 1rem 1rem;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.main-content {
+  display: block !important;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .surfer-content {
+    display: block !important;
+  }
+  
+  .board-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+  }
+  
+  .surfer-bio {
+    display: block;
+  }
+  
+  .surfer-bio img {
+    float: left;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+  .main-content {
+    display: block !important;
+  }
+  .about-section,
+  .gallery-section {
+    grid-column: auto !important;
+    width: 100% !important;
+  }
+}
+.container, 
+.grid-container, 
+.pro-surfers {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: 1024px) {
+  .media-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .surfer-bio img {
+    max-height: 350px; 
+  }
+  
+  .surfer-profile h3 {
+    font-size: 1.5rem; 
+  }
+  
+  .surfboard-gallery h4 {
+    font-size: 1.1rem;
+  }
+  
+  .board-card h5 {
+    font-size: 1rem;
+  }
+  
+  .board-card p {
+    font-size: 0.9rem;
+  }
+  .surfer-content {
+    grid-template-columns: 1fr; 
+  }
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .media-item {
+    max-width: 100%;
+  }
+  
+  .media-item video,
+  .media-item img {
+    max-height: 500px; 
+    object-fit: contain;
+  }
+  
+ 
+  .surfboard-gallery {
+    width: 100%;
+  }
+
+  .surfer-profile {
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .media-item {
+    background-color: #222;
+  }
+  
+  .media-caption {
+    color: #bbb;
+  }
+  
+  .surfer-profile {
+    background-color: #222;
+  }
+  
+  .board-card {
+    background-color: #333;
+  }
+  
+  .board-card h5 {
+    color: #64a7d3;
+  }
+  
+  .board-card img {
+    border-bottom-color: #444;
+  }
+}
+/*---------------------------------END SURF PAGE-----------------------*/
+/*--------------------- PHOTOGRAPHY PAGE -----------------------*/
+/* Photography page styles */
+
+/* Intro section */
+.photography-intro {
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photography-intro h2 {
+  margin-bottom: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.photography-intro > p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Portfolio section */
+.portfolio-section {
+  margin-top: 3rem;
+}
+
+.portfolio-section h3 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  border-left: 4px solid #3a7ca5;
+  padding-left: 1rem;
+}
+
+.portfolio-section > p {
+  margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.photo-details {
+  padding: 1.5rem;
+}
+
+.photo-details h4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.photo-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.photo-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Photography Inspirations section */
+.photography-inspirations {
+  margin: 5rem 0 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photography-inspirations > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+}
+
+.photography-inspirations > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.photographer-profile {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.photographer-profile h3 {
+  border-bottom: 2px solid #3a7ca5;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+}
+
+.photographer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.photographer-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.photographer-bio img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.photographer-bio p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.photographer-style h4 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.style-list {
+  padding-left: 1.5rem;
+}
+
+.style-list li {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.style-list strong {
+  font-weight: 600;
+  color: #3a7ca5;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .photographer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .photographer-bio img {
+    float: none;
+    margin: 0 auto 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .portfolio-item {
+    background-color: #2a2a2a;
+  }
+  
+  .photo-details h4 {
+    color: #f0f0f0;
+  }
+  
+  .photo-meta {
+    color: #bbb;
+  }
+  
+  .photo-description {
+    color: #e0e0e0;
+  }
+  
+  .photographer-profile {
+    background-color: #222;
+  }
+  
+  .style-list strong {
+    color: #64a7d3;
+  }
+}
+/*---------------------------END PHOTOGRAPHY-----------------------------*/
+/*-------------------------BEGIN MOTORSPORTS -----------------------------*/
+/* Motorsports page styles */
+
+/* Intro section */
+.motorsports-intro {
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.motorsports-intro h2 {
+  margin-bottom: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.motorsports-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* My Vehicles Section */
+.my-vehicles {
+  margin-bottom: 4rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-vehicles > h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+}
+
+.vehicle-showcase {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.vehicle-showcase h3 {
+  margin-bottom: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #3a7ca5;
+  padding-bottom: 0.5rem;
+}
+
+.vehicle-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.vehicle-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vehicle-main-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-main-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.vehicle-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.vehicle-thumbnails img {
+  width: 75px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vehicle-thumbnails img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vehicle-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Specs Reveal Section */
+.specs-reveal {
+  margin-top: 1.5rem;
+}
+
+.reveal-button {
+  background-color: #3a7ca5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reveal-button:hover {
+  background-color: #2a5a7a;
+}
+
+.specs-container {
+  margin-top: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default, shown with JavaScript */
+}
+
+.specs-container.show {
+  display: block;
+}
+
+.specs-image {
+  margin-bottom: 1.5rem;
+}
+
+.specs-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.specs-details h4 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.specs-details ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.specs-details li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.specs-details strong {
+  font-weight: 600;
+  color: #3a7ca5;
+}
+
+.specs-details p {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* MotoGP Section */
+.motogp-section {
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.motogp-section h2 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.motogp-section > p {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.motogp-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.motogp-item {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.motogp-item:hover {
+  transform: translateY(-5px);
+}
+
+.motogp-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.motogp-caption {
+  padding: 1rem;
+}
+
+.motogp-caption p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Vehicle reveal button container */
+.vehicle-reveal {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Hide motorcycle section by default */
+#my-motorcycle {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Styles for when motorcycle is shown */
+#my-motorcycle.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated reveal effect for the button */
+.reveal-button {
+  background-color: #3a7ca5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reveal-button:hover {
+  background-color: #2a5a7a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reveal-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Add these styles to your existing CSS */
+
+/* Vehicle buttons container */
+.vehicle-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Vehicle introduction text */
+.vehicles-intro {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Vehicle reveal button container */
+.vehicle-reveal {
+  text-align: center;
+}
+
+/* Hide vehicle sections by default */
+.hidden-vehicle {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Styles for when vehicle is shown */
+.hidden-vehicle.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated reveal effect for the buttons */
+.reveal-button {
+  background-color: #3a7ca5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+}
+
+.reveal-button:hover {
+  background-color: #2a5a7a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reveal-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Different colors for motorcycle and car buttons */
+.motorcycle-button {
+  background-color: #c23616;
+}
+
+.motorcycle-button:hover {
+  background-color: #a31c0e;
+}
+
+.car-button {
+  background-color: #273c75;
+}
+
+.car-button:hover {
+  background-color: #1a2a5a;
+}
+
+/* Active button styling */
+.reveal-button.active {
+  background-color: #444;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+
+/* Fade in animation for vehicle content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show .vehicle-content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Formula 1 Section Styles */
+.f1-section {
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem; /* Add space between MotoGP and F1 sections */
+  border-top: 1px solid #ddd; /* Optional divider */
+}
+
+.f1-section h2 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.f1-section > p {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.f1-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.f1-item {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.f1-item:hover {
+  transform: translateY(-5px);
+}
+
+.f1-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.f1-caption {
+  padding: 1rem;
+}
+
+.f1-caption p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Media queries for responsive buttons */
+@media (max-width: 600px) {
+  .vehicle-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reveal-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .vehicle-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .vehicle-thumbnails {
+    justify-content: flex-start;
+  }
+  
+  .vehicle-thumbnails img {
+    width: 100px;
+    height: 67px;
+  }
+  
+  .specs-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .motogp-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .f1-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .creators-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tips-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .specs-container {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .specs-image {
+    flex: 0 0 45%;
+    margin-bottom: 0;
+  }
+  
+  .specs-details {
+    flex: 0 0 50%;
+  }
+  
+  .motogp-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recipe-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .creators-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .tips-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .motogp-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .f1-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .vehicle-showcase {
+    background-color: #222;
+  }
+  
+  .vehicle-showcase h3 {
+    color: #f0f0f0;
+  }
+  
+  .specs-container {
+    background-color: #333;
+  }
+  
+  .specs-details h4 {
+    color: #f0f0f0;
+  }
+  
+  .specs-details strong {
+    color: #64a7d3;
+  }
+  
+  .reveal-button {
+    background-color: #3a7ca5;
+  }
+  
+  .reveal-button:hover {
+    background-color: #4a8cb5;
+  }
+  
+  .motogp-item {
+    background-color: #222;
+  }
+  .f1-section {
+    border-top-color: #444; 
+  }
+  
+  .f1-item {
+    background-color: #222;
+  }
+  
+  .f1-caption p {
+    color: #e0e0e0;
+  }
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  /* Header and navigation */
+  .site-header {
+    background-color: #1e1e1e;
+  }
+  
+  .site-title span {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+  }
+  
+  .nav-links {
+    background-color: #1e1e1e;
+  }
+  
+  .nav-links a {
+    color: #e0e0e0;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #3a3a3a;
+  }
+  
+  /* Section headings and text */
+  h1, h2, h3, h4, h5, h6 {
+    color: #f0f0f0;
+  }
+  
+  p, li, span, div {
+    color: #e0e0e0;
+  }
+  
+  /* Vehicle showcase sections */
+  .vehicle-showcase {
+    background-color: #1e1e1e;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .vehicle-showcase h3 {
+    color: #f0f0f0;
+    border-bottom-color: #4a8cb5;
+  }
+  
+  /* Specs container and details */
+  .specs-container {
+    background-color: #2a2a2a;
+  }
+  
+  .specs-details h4 {
+    color: #f0f0f0;
+  }
+  
+  .specs-details strong {
+    color: #64a7d3;
+  }
+  
+  .specs-details li {
+    color: #e0e0e0;
+  }
+  
+  /* MotoGP and F1 sections */
+  .motogp-item,
+  .f1-item {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .motogp-caption p,
+  .f1-caption p {
+    color: #e0e0e0;
+  }
+  
+  /* Section dividers */
+  .f1-section {
+    border-top-color: #444;
+  }
+  
+  .section-divider::before,
+  .section-divider::after {
+    background-color: #444;
+  }
+  
+  /* Button colors for dark mode */
+  .reveal-button {
+    background-color: #3a7ca5;
+    color: #f0f0f0;
+  }
+  
+  .reveal-button:hover {
+    background-color: #4a8cb5;
+  }
+  
+  .motorcycle-button {
+    background-color: #c23616;
+  }
+  
+  .motorcycle-button:hover {
+    background-color: #d33a1c;
+  }
+  
+  .car-button {
+    background-color: #273c75;
+  }
+  
+  .car-button:hover {
+    background-color: #324e9a;
+  }
+  
+  .reveal-button.active {
+    background-color: #555;
+  }
+  .cooking-intro h2,
+  .my-creations > h2,
+  .food-creators > h2,
+  .kitchen-tips > h2 {
+    color: #f0f0f0;
+  }
+  
+  .recipe-card,
+  .creator-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .recipe-details h3,
+  .creator-details h3,
+  .tip h3 {
+    color: #f0f0f0;
+  }
+  
+  .recipe-description,
+  .creator-description,
+  .tip p {
+    color: #e0e0e0;
+  }
+  
+  .creator-handle {
+    color: #bbb;
+  }
+  
+  .cuisine {
+    background-color: #003a61;
+    color: #a0d7ff;
+  }
+  
+  .difficulty {
+    background-color: #5c0022;
+    color: #ffb6d6;
+  }
+  
+  .date {
+    background-color: #1a4d00;
+    color: #b5f091;
+  }
+  
+  .kitchen-tips {
+    background-color: #1e1e1e;
+  }
+  
+  .tip {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #1a1a1a;
+  }
+}
+/*------------------------------END MOTORSPORTS----------------*/
+/*------------------------------BEGIN COOKING-------------------*/
+
+/* Intro section */
+.cooking-intro {
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cooking-intro h2 {
+  margin-bottom: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.cooking-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* My Creations Section */
+.my-creations {
+  margin-bottom: 4rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-creations > h2 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.creations-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-image {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 60%; 
+}
+
+.recipe-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.recipe-card:hover .recipe-image img {
+  transform: scale(1.05);
+}
+
+.recipe-details {
+  padding: 1.5rem;
+}
+
+.recipe-details h3 {
+  margin: 0 0 0.75rem 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.recipe-description {
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.recipe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.recipe-meta span {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.cuisine {
+  background-color: #e6f7ff;
+  color: #0066cc;
+}
+
+.difficulty {
+  background-color: #fff0f6;
+  color: #eb2f96;
+}
+
+.date {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+/* Food Creators Section */
+.food-creators {
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food-creators > h2 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.creators-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
+}
+
+.creators-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.creator-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.creator-card:hover {
+  transform: translateY(-5px);
+}
+
+.creator-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Square aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+.creator-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creator-details {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.creator-details h3 {
+  margin: 0 0 0.25rem 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.creator-handle {
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.creator-description {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  flex-grow: 1;
+}
+
+.creator-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.creator-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.youtube-link {
+  background-color: #ff0000;
+  color: white;
+}
+
+.youtube-link:hover {
+  background-color: #cc0000;
+}
+
+.instagram-link {
+  background-color: #c13584;
+  color: white;
+}
+
+.instagram-link:hover {
+  background-color: #a11d6c;
+}
+
+/* Kitchen Tips Section */
+.kitchen-tips {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.kitchen-tips > h2 {
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+.kitchen-tips > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+}
+
+.tips-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.tip {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tip h3 {
+  margin: 0 0 0.75rem 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.tip p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+@media (min-width: 768px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .creators-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tips-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .recipe-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .creators-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .tips-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

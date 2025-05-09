@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surfing - Geno V. McDonald</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font declarations should be in your CSS file -->
+</head>
+<body>
+  <div class="grid-container">
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-title">
+          <span style=" padding: 0.5rem 1rem; border-radius: 4px; display: inline-block;">Geno V. McDonald</span>
+        </h1>
+        <nav class="site-navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="surfing.html">Surfing</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="motorsports.html">Motorsports</a></li>
+            <li><a href="cooking.html">Cooking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      <!-- Your personal surfing journey section -->
+      <section class="surfing-intro">
+        <h2>My Surfing Journey</h2>
+        <p>Surfing has been a passion of mine for many years. It's not just a sport but a way of connecting with nature and finding peace in the ocean's rhythm. I started surfing when I was in the military in Hawaii and have been hooked ever since, chasing waves along coastlines around the world.</p>
+        
+        <div class="personal-surf-media">
+          <h3>My Surfing Adventures</h3>
+          
+          <div class="media-grid">
+            <!-- Personal surfing video 1 -->
+            <div class="media-item">
+              <video controls width="100%" poster="surfing_images/video_thumbnail1.jpg" preload = "metadata">
+                <source src="surfing_page\player_export_2.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="media-caption">Catching small waves in the phillippines - Summer 2021</p>
+            </div>
+            
+            <!-- Personal surfing video 2 -->
+            <div class="media-item">
+              <video controls width="100%" poster="surfing_images/video_thumbnail2.jpg">
+                <source src="surfing_page\E5FE5833-C3D1-4321-AF7E-ECA95B122CB9.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="media-caption">Early morning session in the Hamptons, NY - Fall 2021</p>
+            </div>
+            
+            <!-- Personal surfing image -->
+            <div class="media-item">
+              <img src="surfing_page\IMG_0647.jpg" 
+                   srcset="surfing_page\IMG_0647.jpg 480w,
+                           surfing_page\IMG_0647.jpg 960w
+                           surfing_page\IMG_0647.jpg 1440w"
+                   sizes="(max-width: 600px) 100vw, 33vw"
+                   alt="Sun setting at Pipeline, Hawaii." 
+                   width="300" 
+                   height="200">
+              <p class="media-caption">Sunset at Pipeline, Hawaii. One of the most dangerous waves in the world to surf - Winter 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="pro-surfers">
+        <h2>Pro Surfers Who Inspire Me</h2>
+        <p>These professional surfers have influenced my style and approach to the sport. I admire their technique, equipment choices, and their ability to read the ocean. They dont only represent my home of Hawaii but i also enjoy watching their vlogs on YouTube</p>
+        
+        <!-- John John Florence section -->
+        <div class="surfer-profile" id="john-john">
+          <h3>John John Florence</h3>
+          <div class="surfer-content">
+            <div class="surfer-bio">
+              <img src="surfing_page\JJF_barrel.jpg" 
+                   srcset="surfing_page\JJF_barrel.jpg 480w,
+                            surfing_page\JJF_barrel.jpg 960w
+                            surfing_page\JJF_barrel.jpg 1440w"
+                   sizes="(max-width: 600px) 100vw, 50vw"
+                   alt="John John Florence surfing a wave" 
+                   width="400" 
+                   height="300">
+              <p>John John Florence is a two-time World Surf League (WSL) champion from Hawaii. He is one of three brothers who are also professional surfers. He stood out amongst them for his discipline to constantly push himself to be better as a kid. If you watch videos of him
+                surfing you can see the world class skill, he makes his maneuvers look effortless and easy. </p>
+              <br>
+              <p>In surfing there are many different kinds of waves. You need a certain board for waves over a certain height, waves for smaller waves, and a board when you're chasing colassal waves. When John John
+                started gaining sponsorships John Pyzel began building boards perfected to his needs. When a surfer goes to a competition they will bring their own collection of boards, or a "quiver". Below is John John's
+                quiver for when he competes.
+              </p>
+            </div>
+            
+            <div class="surfboard-gallery">
+              <h4>John John's Competition Boards</h4>
+              <div class="board-grid">
+                <!-- Board 1 -->
+                <article class="board-card">
+                  <img src="surfing_page\jj_Ghost_TOP_pyzel.webp" 
+                       srcset="surfing_page\jj_Ghost_TOP_pyzel.webp 480w,
+                                surfing_page\jj_Ghost_TOP_pyzel.webp 960w
+                                surfing_page\jj_Ghost_TOP_pyzel.webp 1440w"
+                       sizes="(max-width: 600px) 100vw, 33vw"
+                       alt="John John Florence's Pyzel Ghost board" 
+                       width="300" 
+                       height="200">
+                  <h5>Pyzel Ghost</h5>
+                  <p>John John uses the Pyzel Ghost for powerful waves and competition.</p>
+                </article>
+                
+                <!-- Board 2 -->
+                <article class="board-card">
+                  <img src="surfing_page\jj_NextStep_pyzel.webp" 
+                       srcset="surfing_page\jj_NextStep_pyzel.webp 480w,
+                               surfing_page\jj_NextStep_pyzel.webp 960w
+                               surfing_page\jj_NextStep_pyzel.webp 1440w"
+                       sizes="(max-width: 600px) 100vw, 33vw"
+                       alt="John John Florence's Pyzel Next Step board" 
+                       width="300" 
+                       height="200">
+                  <h5>Pyzel Next Step</h5>
+                  <p>The Pyzel Shadow is John John's go-to for smaller, weaker waves. </p>
+                </article>
+                <!-- Board 3 -->
+                <article class="board-card">
+                    <img src="surfing_page\jj_NextStep_pyzel.webp" 
+                         srcset="surfing_page\jj_NextStep_pyzel.webp 480w,
+                                 surfing_page\jj_NextStep_pyzel.webp 960w
+                                 surfing_page\jj_NextStep_pyzel.webp 1440w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="John John Florence's Pyzel Red Tiger board" 
+                         width="300" 
+                         height="200">
+                    <h5>Pyzel Red Tiger</h5>
+                    <p>The Pyzel Red Tiger is John John's go-to for performance, when he wants to be stylish on medium sized waves this is his go to. </p>
+                  </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Koa Rothman section -->
+        <div class="surfer-profile" id="koa-rothman" style="display: flex; flex-direction: column;">
+          <h3>Koa Rothman</h3>
+          <div class="surfer-content">
+            <div class="surfer-bio">
+              <img src="surfing_page\KR_pfp.jpg" 
+                   srcset="surfing_page\KR_pfp.jpg 480w,
+                           surfing_page\KR_pfp.jpg 960w
+                           surfing_page\KR_pfp.jpg 1440w"
+                   sizes="(max-width: 600px) 100vw, 50vw"
+                   alt="Koa Rothman surfing a big wave" 
+                   width="200" 
+                   height="100"
+                   style="float: none; width: 300px; height: auto; margin: 0 auto 1rem auto; display: block;">
+              <p>Koa Rothman is a fearless big wave surfer from the North Shore of Oahu, Hawaii. He gained recognition for riding some of the biggest waves at Pipeline and Teahupo'o. His YouTube channel "This is Livin'" documents his surfing adventures around the world and has gained a massive following among surf enthusiasts.</p>
+              <br>
+              <p>Koa is a celebrity in the world of surfing so you would think he is always in a need to put on a face for his fans, for him that is not the case.
+                He always admits how scared he is when he goes to surf massive waves and talks about his process of easing nerves for surfing 60ft waves, so that should give you a sense of how real and down to earth he is. I admire his drive to chase his fears and put them aside 
+                to pursue his passion as a surfer. He's also always breaking his boards because he always chases the danger!
+              </p>
+            </div>
+            
+            <div class="surfboard-gallery">
+              <h4>Koa's Go-To Boards</h4>
+              <div class="board-grid">
+                <!-- Board 1 -->
+                <article class="board-card">
+                  <img src="surfing_page\kr_Ghost_TOP.webp" 
+                       srcset="surfing_page\kr_Ghost_TOP.webp 480w,
+                               surfing_page\kr_Ghost_TOP.webp 960w
+                               surfing_page\kr_Ghost_TOP.webp 1440w"
+                       sizes="(max-width: 600px) 100vw, 33vw"
+                       alt="Koa Rothman's Pipeline board" 
+                       width="300" 
+                       height="200">
+                  <h5> Pyzel Ghost</h5>
+                  <p>For Pipeline and other heavy reef breaks, Koa relies on the Ghost. This board's refined outline and rocker are designed for late drops and critical positioning in hollow waves.</p>
+                </article>
+                
+                <!-- Board 2 -->
+                <article class="board-card">
+                  <img src="surfing_page\kr_Padillac_Front.webp" 
+                       srcset="surfing_page\kr_Padillac_Front.webp 480w,
+                               surfing_page\kr_Padillac_Front.webp 960w
+                               surfing_page\kr_Padillac_Front.webp 1440w"
+                       sizes="(max-width: 600px) 100vw, 33vw"
+                       alt="Koa Rothman's big wave gun" 
+                       width="300" 
+                       height="200">
+                  <h5>Pyzel Padillac</h5>
+                  <p>For big wave conditions, Koa uses the Padillac. This step-up board provides the stability and control needed when tackling waves of consequence at spots like Waimea Bay and Jaws.</p>
+                </article>
+                  <!-- Board 3 -->
+                  <article class="board-card">
+                    <img src="surfing_page\kr_Product_Spotlight_Next_Step_1.webp" 
+                         srcset="surfing_page\kr_Product_Spotlight_Next_Step_1.webp 480w,
+                         surfing_page\kr_Product_Spotlight_Next_Step_1.webp 960w
+                         surfing_page\kr_Product_Spotlight_Next_Step_1.webp 1440w"
+                         sizes="(max-width: 600px) 100vw, 33vw"
+                         alt="Koa Rothman's Pipeline board" 
+                         width="300" 
+                         height="200">
+                    <h5> Pyzel Next Step</h5>
+                    <p>You might be thinking that this is the same board as JJF's, but its not. Koa had his Next Step designed with different dimension for his height and body composition. Pipeline is an infamous Wave to surf, and Koa has mastered it. This is his go to board on most days when Pipeline is at its most dangerous where quick reaction times and perfect take off angles are essential.</p>
+                  </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
+      <p>&copy; 2025 Geno V. McDonald</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>   
+</body>
+</html>

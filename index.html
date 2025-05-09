@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    
+    <style>
+       /* Lora Font Family */
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqt8ndeY9Z6JTg.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 700;
+      src: url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqt8ndeY9Z6JTg.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    @font-face {
+      font-family: 'Lora';
+      font-style: italic;
+      font-weight: 400;
+      src: url('https://fonts.gstatic.com/s/lora/v32/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92mvWc3ZyRTQ.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    /* Playfair Display Font Family */
+    @font-face {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qC0s.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    @font-face {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 900;
+      src: url('https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDXbtXK-F2qC0s.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* manrope */
+    @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSvfedN4.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSvfedN4.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+    </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-title"><span >Geno V. McDonald</span></h1>
+        <nav class="site-navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="surfing.html">Surfing</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="motorsports.html">Motorsports</a></li>
+            <li><a href="cooking.html">Cooking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      <section class="about-section">
+        <h2 id="gallery-heading">ABOUT ME</h2>
+        <p>I've always been someone who enjoyed learning new things. My dad is someone who i think of as a jack
+          of all trades. He really does know a lot of things, about a lot of things. So i guess i tried to always 
+          be like that. I dont take pride in many things but one thing that i do is the amount of hobbies that i have.
+          They range across a multitude of things that challenge creativity, my body, and my mind. Follow the links below 
+          to find out more about my hobbies!
+        </p>
+      </section>
+      
+      <section class="gallery-section" aria-label="Featured content gallery">
+        <div class="gallery-container" role="region" aria-labelledby="gallery-heading">
+          <button class="gallery-nav gallery-prev" aria-label="Previous items">
+            <span class="visually-hidden">Previous</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+          
+          <div class="gallery-track">
+            <article class="gallery-item" tabindex="0">
+              <div class="item-image">
+              <a href="surfing.html">
+                <img src="cover_pictures\Surfing_cover_480.jpg" 
+                     srcset="cover_pictures\Surfing_cover_480.jpg 480w,
+                             cover_pictures\Surfing_cover_960.jpg 960w,
+                             cover_pictures\Surfing_cover_1440.jpg 1440w"
+                     sizes="(max-width: 100px) 100vw, 33vw"
+                     alt="Me getting ready to surf at sunrise in the phillippines" 
+                     width="300" 
+                     height="100">
+                <div class="item-content-overlay">
+                  <h3 class="item-title">Surfing</h3>
+                </div>
+              </a>
+              </div>
+            </article>
+            
+            
+            <article class="gallery-item" tabindex="0">
+              <div class="item-image">
+              <a href="photography.html">
+                <img src="cover_pictures\Photography_cover_480.jpg" 
+                     srcset="cover_pictures\Photography_cover_480.jpg 480w,
+                             cover_pictures\Photography_cover_960.jpg 960w,
+                             cover_pictures\Photography_cover_1440.jpg 1440w"
+                     sizes="(max-width: 600px) 100vw, 33vw"
+                     alt="Picture of Morraine Lake" 
+                     width="300" 
+                     height="200">
+                <div class="item-content-overlay">
+                  <h3 class="item-title">Photography</h3>
+                </div>
+              </a>
+              </div>
+            </article>
+
+            <article class="gallery-item" tabindex="0">
+              <div class="item-image">
+              <a href="motorsports.html">
+                <img src="cover_pictures\motorsports_cover_480.jpg" 
+                     srcset="cover_pictures\motorsports_cover_480.jpg 480w,
+                             cover_pictures\motorsports_cover_960.jpg 960w,
+                             cover_pictures\motorsports_cover_1440.jpg 1440w"
+                     sizes="(max-width: 600px) 100vw, 33vw"
+                     alt="Back end of Red Yamaha MT-07 Motorcycle on Long Island" 
+                     width="300" 
+                     height="200">
+                <div class="item-content-overlay">
+                  <h3 class="item-title">MotorSports</h3>
+                </div>
+              </a>
+              </div>
+            </article>
+
+            <article class="gallery-item" tabindex="0">
+              <div class="item-image">
+              <a href="cooking.html">
+                <img src="cover_pictures\food_cover2_1440.jpg" 
+                     srcset="cover_pictures\food_cover2_480.jpg 480w,
+                             cover_pictures\food_cover2_960.jpg 960w,
+                             cover_pictures\food_cover2_1440.jpg 1440w"
+                     sizes="(max-width: 600px) 100vw, 33vw"
+                     alt="Close-up of a prepared dish" 
+                     width="300" 
+                     height="200">
+                <div class="item-content-overlay">
+                  <h3 class="item-title">Cooking</h3>
+                </div>
+              </a>
+              </div>
+            </article>
+          </div>
+          
+          <button class="gallery-nav gallery-next" aria-label="Next items">
+            <span class="visually-hidden">Next</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="gallery-indicators" aria-hidden="true">
+          <!-- Generated by JavaScript -->
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
+      <p>&copy; 2025 Geno V. McDonald</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>   
+</body>
+
+</html>

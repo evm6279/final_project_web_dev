@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorsports - Geno V. McDonald</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-container">
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-title">
+          <span style="padding: 0.5rem 1rem; border-radius: 4px; display: inline-block;">Geno V. McDonald</span>
+        </h1>
+        <nav class="site-navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="surfing.html">Surfing</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="motorsports.html">Motorsports</a></li>
+            <li><a href="cooking.html">Cooking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      <!-- Motorsports Introduction -->
+      <section class="motorsports-intro">
+        <h2>My Motorsports Passion</h2>
+        <p>From the roar of engines to the precision engineering, motorsports has always captivated my attention. Whether it's the technical aspects of vehicle performance or the thrill of speed, this passion has led me to own and ride motorcycles and drive performance cars. Join me in exploring my personal collection and my favorite aspects of motorsports culture.</p>
+      </section>
+      
+      <!-- My Vehicles Section -->
+      <section class="my-vehicles">
+        <h2>My Vehicles</h2>
+        <p class="vehicles-intro">I'm fortunate to have two vehicles that satisfy different aspects of my passion for motorsports. Click the buttons below to learn more about each one!</p>
+        
+        <div class="vehicle-buttons">
+          <!-- Motorcycle Reveal Button -->
+          <div class="vehicle-reveal">
+            <button id="reveal-motorcycle" class="reveal-button motorcycle-button">Reveal My Motorcycle</button>
+          </div>
+          
+          <!-- Car Reveal Button -->
+          <div class="vehicle-reveal">
+            <button id="reveal-car" class="reveal-button car-button">Reveal My Car</button>
+          </div>
+        </div>
+        
+        <!-- Motorcycle Section (Hidden Initially) -->
+        <div class="vehicle-showcase hidden-vehicle" id="my-motorcycle">
+          <h3>My Motorcycle</h3>
+          <div class="vehicle-content">
+            <div class="vehicle-gallery">
+              <div class="vehicle-main-image">
+                <img src="motorsports\IMG_6133.jpg" 
+                     srcset="motorsports\IMG_6133.jpg 480w,
+                             motorsports\IMG_6133.jpg 960w,
+                             motorsports\IMG_6133.jpg 1440w"
+                     sizes="(max-width: 600px) 100vw, 50vw"
+                     alt="My Yamaha MT-07 motorcycle" 
+                     width="600" 
+                     height="400">
+              </div>
+
+            </div>
+            
+            <div class="vehicle-details">
+              <p>My Yamaha MT-07 has been my faithful companion on countless rides. The raw torque and nimble handling make it perfect for both city commuting and weekend canyon carving. I've made a few modifications to enhance its performance and style, including a custom exhaust system and upgraded suspension.</p>
+              
+              <div class="specs-details">
+                <h4>Yamaha MT-07 Specifications</h4>
+                <ul>
+                  <li><strong>Engine:</strong> 689cc liquid-cooled DOHC 4-stroke inline twin-cylinder</li>
+                  <li><strong>Power:</strong> 74.8 hp @ 9,000 rpm</li>
+                  <li><strong>Torque:</strong> 50.2 lb-ft @ 6,500 rpm</li>
+                  <li><strong>Weight:</strong> 406 lbs (wet)</li>
+                  <li><strong>Suspension:</strong> 41mm telescopic fork (front), single shock (rear)</li>
+                  <li><strong>Brakes:</strong> Dual 282mm discs (front), 245mm disc (rear)</li>
+                  <li><strong>Fuel Capacity:</strong> 3.7 gallons</li>
+                  <li><strong>Seat Height:</strong> 31.7 inches</li>
+                </ul>
+                <p>My modifications: Akrapovič exhaust, Öhlins rear shock, LED integrated tail light, and bar-end mirrors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Car Section (Hidden Initially) -->
+        <div class="vehicle-showcase hidden-vehicle" id="my-car">
+          <h3>My Car</h3>
+          <div class="vehicle-content">
+            <div class="vehicle-gallery">
+              <div class="vehicle-main-image">
+                <img src="motorsports\IMG_8982.JPG" 
+                     srcset="motorsports\IMG_8982.JPG 480w,
+                             motorsports\IMG_8982.JPG 960w,
+                             motorsports\IMG_8982.JPG 1440w"
+                     sizes="(max-width: 600px) 100vw, 50vw"
+                     alt="My performance car" 
+                     width="600" 
+                     height="400">
+              </div>
+            
+            </div>
+            
+            <div class="vehicle-details">
+              <p>My car represents the perfect balance between daily usability and weekend performance. With enough power to keep things exciting but still comfortable for longer trips, it's been a joy to own. I've made several enhancements to improve handling and responsiveness while maintaining its reliability.</p>
+              
+              <div class="specs-details">
+                <h4>Car Specifications</h4>
+                <ul>
+                  <li><strong>Engine:</strong> 2.0L turbocharged inline-four</li>
+                  <li><strong>Power:</strong> 300 hp @ 6,500 rpm</li>
+                  <li><strong>Torque:</strong> 280 lb-ft @ 1,900 rpm</li>
+                  <li><strong>Transmission:</strong> 6-speed manual</li>
+                  <li><strong>Weight:</strong> 3,300 lbs</li>
+                  <li><strong>0-60 mph:</strong> 5.4 seconds</li>
+                  <li><strong>Drivetrain:</strong> All-wheel drive</li>
+                </ul>
+                <p>My modifications: Aftermarket exhaust, upgraded intercooler, Cold Air Intake, and Blow-off Valve.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- MotoGP Section -->
+      <section class="motogp-section">
+        <h2>MotoGP - The Pinnacle of Motorcycle Racing</h2>
+        <p>MotoGP represents the absolute pinnacle of motorcycle racing technology and rider skill. These machines can exceed 220 mph and lean at angles that seem to defy physics. Here are some incredible moments from recent MotoGP seasons that showcase why this motorsport captivates millions of fans worldwide.</p>
+        
+        <div class="motogp-gallery">
+          <!-- MotoGP Image 1 -->
+          <div class="motogp-item">
+            <img src="motorsports\IMG_0929.jpg" 
+                 srcset="motorsports\IMG_0929.jpg 480w,
+                         motorsports\IMG_0929.jpg 960w,
+                         motorsports\IMG_0929.jpg 1440w"
+                 sizes="(max-width: 600px) 100vw, 33vw"
+                 alt="MotoGP rider leaning into a corner" 
+                 width="400" 
+                 height="300">
+            <div class="motogp-caption">
+              <p>The extreme lean angles in MotoGP can exceed 60 degrees, with riders' knees and elbows dragging on the tarmac at speeds over 100 mph.</p>
+            </div>
+          </div>
+          
+          <!-- MotoGP Image 2 -->
+          <div class="motogp-item">
+            <img src="motorsports\IMG_0928.jpg" 
+                 srcset="motorsports\IMG_0928.jpg 480w,
+                         motorsports\IMG_0928.jpg 960w,
+                         motorsports\IMG_0928.jpg 1440w"
+                 sizes="(max-width: 600px) 100vw, 33vw"
+                 alt="MotoGP race start with multiple riders" 
+                 width="400" 
+                 height="300">
+            <div class="motogp-caption">
+              <p>Race starts in MotoGP are intense moments where riders accelerate from 0 to 100 mph in just seconds, carefully managing wheelies and finding the perfect line.</p>
+            </div>
+          </div>
+          
+          <!-- MotoGP Image 3 -->
+          <div class="motogp-item">
+            <img src="motorsports\IMG_0930.jpg" 
+                 srcset="motorsports\IMG_0930.jpg 480w,
+                         motorsports\IMG_0930.jpg 960w,
+                         motorsports\IMG_0930.jpg 1440w"
+                 sizes="(max-width: 600px) 100vw, 33vw"
+                 alt="Close-up of MotoGP motorcycle in motion" 
+                 width="400" 
+                 height="300">
+            <div class="motogp-caption">
+              <p>Modern MotoGP bikes produce over 250 horsepower and weigh just 346 pounds, creating one of the highest power-to-weight ratios in motorsport.</p>
+            </div>
+          </div>
+          
+          <!-- MotoGP Image 4 -->
+          <div class="motogp-item">
+            <img src="motorsports\IMG_0932.jpg" 
+                 srcset="motorsports\IMG_0932.jpg 480w,
+                         motorsports\IMG_0932.jpg 960w,
+                         motorsports\IMG_0932.jpg 1440w"
+                 sizes="(max-width: 600px) 100vw, 33vw"
+                 alt="MotoGP riders in a close battle" 
+                 width="400" 
+                 height="300">
+            <div class="motogp-caption">
+              <p>Wheel-to-wheel battles in MotoGP require exceptional skill and bravery, with riders making split-second decisions at extreme speeds.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Formula 1 Section -->
+<section class="f1-section">
+    <h2>Formula 1 - The Pinnacle of Motorsport Engineering</h2>
+    <p>Formula 1 represents the ultimate combination of engineering excellence, driver skill, and team strategy. These technological marvels accelerate from 0-60 mph in under 2.5 seconds and generate enough downforce to theoretically drive upside down. Here are some spectacular moments from recent F1 seasons that showcase why this motorsport is considered the most prestigious racing series in the world.</p>
+    
+    <div class="f1-gallery">
+      <!-- F1 Image 1 -->
+      <div class="f1-item">
+        <img src="motorsports\redbull_car.webp" 
+             srcset="motorsports\redbull_car.webp 480w,
+                     motorsports\redbull_car.webp 960w,
+                     motorsports\redbull_car.webp 1440w"
+             sizes="(max-width: 600px) 100vw, 33vw"
+             alt="F1 car exiting a corner with sparks flying" 
+             width="400" 
+             height="300">
+        <div class="f1-caption">
+          <p>Modern F1 cars generate over 1,000 horsepower from compact 1.6-liter hybrid power units, demonstrating incredible engineering efficiency.</p>
+        </div>
+      </div>
+      
+      <!-- F1 Image 2 -->
+      <div class="f1-item">
+        <img src="motorsports\2-Best-F1-tracks.jpg" 
+             srcset="motorsports\2-Best-F1-tracks.jpg 480w,
+                     motorsports\2-Best-F1-tracks.jpg 960w,
+                     motorsports\2-Best-F1-tracks.jpg 1440w"
+              sizes="(max-width: 600px) 100vw, 33vw"
+             alt="Frontal view of F1 race start" 
+             width="400" 
+             height="300">
+        <div class="f1-caption">
+          <p>Race starts in F1 are crucial moments that can determine the outcome of an entire Grand Prix, with positions gained or lost in seconds.</p>
+        </div>
+      </div>
+      
+      <!-- F1 Image 3 -->
+      <div class="f1-item">
+        <img src="motorsports\red-bull-max-verstappen-belgian-grand-prix-planet-f12.jpg" 
+             srcset="motorsports\red-bull-max-verstappen-belgian-grand-prix-planet-f12.jpg 480w,
+                     motorsports\red-bull-max-verstappen-belgian-grand-prix-planet-f12.jpg 960w,
+                     motorsports\red-bull-max-verstappen-belgian-grand-prix-planet-f12.jpg 1440w"
+             sizes="(max-width: 600px) 100vw, 33vw"
+             alt="F1 car in the rain with spray" 
+             width="400" 
+             height="300">
+        <div class="f1-caption">
+          <p>During wet races, F1 drivers navigate at high speeds with severely limited visibility, relying on instinct and track knowledge.</p>
+        </div>
+      </div>
+      
+      <!-- F1 Image 4 -->
+      <div class="f1-item">
+        <img src="motorsports\verstappen_win.jpg" 
+             srcset="motorsports\verstappen_win.jpg 480w,
+                     motorsports\verstappen_win.jpg 960w,
+                     motorsports\verstappen_win.jpg 1440w"
+             sizes="(max-width: 600px) 100vw, 33vw"
+             alt="Max Verstappen celebrating a win" 
+             width="400" 
+             height="300">
+        <div class="f1-caption">
+          <p>Max Verstappen achieved 53 career wins, surpassing Ayrton Senna’s record, and set new benchmarks in Formula One, including the most wins in a single season and the longest unbroken sequence of victories​​.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    </main>
+    
+    <footer class="site-footer">
+      <p>&copy; 2025 Geno V. McDonald</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>   
+</body>
+</html>
